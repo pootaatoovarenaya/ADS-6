@@ -3,6 +3,11 @@
 #define INCLUDE_TPQUEUE_H_
 #include <stdexcept>
 
+struct SYM {
+  char ch;
+  int prior;
+};
+
 template<typename T>
 class TPQueue {
  private:
@@ -61,11 +66,6 @@ class TPQueue {
   bool empty() const {
     return head == nullptr;
   }
-};
-
-struct SYM {
-  har ch;
-  int prior;
 };
 
 #endif  // INCLUDE_TPQUEUE_H_
